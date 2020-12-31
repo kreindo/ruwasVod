@@ -1,0 +1,160 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    
+    background-color: #e9e8e9;
+    margin: 0 0 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em ;
+}
+
+.menuButton {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    
+    gap: 1.5em;
+    
+    
+}
+
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5em .5em;
+    
+} */
+/* 
+.menuButton {
+
+} */
+
+/* .upperSide {
+    position: absolute;
+    /* isplay: flex;
+    flex-direction: column;
+    background-color: #e9e8e9;
+    height: 6rem; 
+}    */
+.logoImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.videoSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem 1rem;
+    padding: 3rem 0;
+    margin: 0 1.5rem;
+    border-top: 4px solid #ccc;
+}
+
+.videoSection:first-child {
+    border-top: none;
+}
+
+.thumbnail {
+    position: relative;
+    display: flex;
+
+}
+
+.thumbnail::before {
+    content: attr(data-duration);
+    position: absolute;
+    background-color: rgba(0, 0, 0, .85);
+    color: white;
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em;
+    font-size: .9rem;
+}
+
+.videoThumbnail {
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 150px;
+    background-color: #aaa;
+}
+
+.video-bottom {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+
+}
+.channel-icon {
+    margin-right: .75rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #aaa;
+
+}
+
+.videoDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-bottom: .5rem;
+
+}
+
+.video-channel-name {
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms;
+
+}
+
+.video-channel-name:hover {
+    color: rgb(39, 39, 39);
+}
+
+.video-metadata, .video-channel-name {
+    color: #555;
+}
+
+.video-section-title {
+    grid-column: 1 / -1;
+    margin: -.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 ,5rem;
+}
+
+.specBut {
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #f9f9f9;
+}
+/* 
