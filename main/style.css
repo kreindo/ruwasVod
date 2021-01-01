@@ -48,11 +48,26 @@ header {
     height: 6rem; 
 }    */
 .logoImage {
+    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    
+ 
+/* 
+    position: relative;
+    left: 40rem;
+
+ */    
+    
 }
+.ips {
+    font-size: medium;
+    font-weight: 500;
+    
+}
+
+
 
 .videoSection {
     display: grid;
